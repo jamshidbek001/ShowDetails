@@ -11,6 +11,9 @@ import { FormsModule } from '@angular/forms';
 import { LoggerService } from './Services/logger.service';
 import { AllUsersComponent } from './all-users/all-users.component';
 import { UserDetailsComponent } from './user-details/user-details.component';
+import { Comp1Component } from './comp1/comp1.component';
+import { Comp2Component } from './comp2/comp2.component';
+import { DataService } from './Services/data.service';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,9 @@ import { UserDetailsComponent } from './user-details/user-details.component';
     JavascriptComponent,
     AdduserComponent,
     AllUsersComponent,
-    UserDetailsComponent
+    UserDetailsComponent,
+    Comp1Component,
+    Comp2Component
   ],
   imports: [
     BrowserModule,
@@ -28,7 +33,8 @@ import { UserDetailsComponent } from './user-details/user-details.component';
   ],
   providers: [
     EnrollService,
-    LoggerService
+    LoggerService,
+    DataService
   ],
   bootstrap: [AppComponent]
 })
